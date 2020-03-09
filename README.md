@@ -32,9 +32,16 @@ Next, if we cannot see the version of `cmake`, then issue following command to i
 sudo apt-get install cmake
 ```
 
-Now, some other libraries for building the package are also required, which can be installed using this command in the terminal.
+Now, some other libraries for building the package are also required, which can be installed using this command in the terminal. Press `Y` when will be required.
 
 ```bash
+sudo apt-get install swig
+sudo apt-get install libboost-all-dev
+sudo apt-get install cmake-data
+sudo apt-get install liblog4cpp5-dev
+sudo apt-get install libitpp-dev
+sudo apt-get install libcppunit-dev
+sudo apt-get install gnuradio-dev
 sudo apt-get install build-essential
 ```
 
