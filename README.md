@@ -101,8 +101,16 @@ change your directory to `build`.
 cd build/
 ```
 
-Now, issue this long command.
+Now, issue the following command. `DREGRESSIONTEST_DOWNLOAD` is turned `OFF` because we have downloaded it manually and will perform the regression tests using the dedicated path to that folder of regression tests downloaded earlier.
 
+`DGMX_BUILD_OWN_FFTW` is turned `OFF` because we have installed it separately by using:
+
+`sudo apt-get install libfftw3-dev` in that video. 
+
+If you turned these flags `ON` then you do not need to do these manually. The answers are given in this Gromacs manual. 
+
+[http://manual.gromacs.org/documentation/5.1/install-guide/index.html](http://manual.gromacs.org/documentation/5.1/install-guide/index.html 
+) 
 ```bash
 sudo cmake .. -DGMX_BUILD_OWN_FFTW=OFF -DREGRESSIONTEST_DOWNLOAD=OFF -DCMAKE_C_COMPILER=gcc -DREGRESSIONTEST_PATH=/home/rehan/Downloads/GromacsDownload/regressiontests-2020
 ```
